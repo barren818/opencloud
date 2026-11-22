@@ -1,0 +1,17 @@
+
+#
+# /etc/fstab
+# Created by anaconda on Sat Aug 22 20:08:29 2026
+#
+# Accessible filesystems, by reference, are maintained under '/dev/disk/'.
+# See man pages fstab(5), findfs(8), mount(8) and/or blkid(8) for more info.
+#
+# After editing this file, run 'systemctl daemon-reload' to update systemd
+# units generated from this file.
+#
+/dev/mapper/openeuler-root /                       ext4    defaults        1 1
+UUID=dc5b7afd-7e0c-45f0-8db0-c1d1d44c0d83 /boot                   ext4    defaults        1 2
+/dev/mapper/openeuler-swap none                    swap    defaults        0 0
+UUID="040e844f-3865-4d93-b524-b84a9b6ff1bb" /backup-data ext4  defaults  0  0
+UUID="09fdbbbb-a6cc-4beb-8d8a-cdc714501043" /company-data ext4 defaults  0  0
+UUID="aabdaf41-0674-462c-a285-66d38759ecd9" /website-data ext4 defaults  0  0

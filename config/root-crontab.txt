@@ -1,0 +1,4 @@
+0 8 * * * /opt/scripts/disk_check.sh
+*/5 * * * * /opt/scripts/nginx_check.sh
+0 22 * * * tar -czf /backup-data/daily/website-$(date +\%F).tar.gz -C /company/website html
+0 23 * * 0 tar -czf /backup-data/weekly/nginx-$(date +\%F).tar.gz -C /etc nginx
